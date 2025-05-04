@@ -10,17 +10,25 @@ See requirements.txt
 
 1. clone projet:
 
-    git clone https://github.com/athanase25537/california_housing.git
+        git clone https://github.com/athanase25537/california_housing.git
 
 2. go to the main directory:
 
         cd california_housing
 
-3. install dependencies:
+3. create virtual environment:
 
-    pip install -r requirements.txt
+        python3 -m venv myenv
 
-4. Make sure you've download the model "california_housing.pkl"
+4. run it:
+
+        source myenv/bin/activate
+
+5. install dependencies:
+
+        pip install -r requirements.txt
+
+6. Make sure you've download the model "california_housing.pkl"
 
 ## Run the API:
 
