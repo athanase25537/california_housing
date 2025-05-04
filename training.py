@@ -1,10 +1,10 @@
 import pandas as pd
 import os
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_absolute_error
+# from sklearn.linear_model import LinearRegression
+# from sklearn.metrics import mean_absolute_error
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.tree import DecisionTreeRegressor
+# from sklearn.tree import DecisionTreeRegressor
 from sklearn.preprocessing import LabelEncoder
 import joblib
 import math
@@ -34,25 +34,25 @@ X = df.drop([target, 'ocean_proximity'], axis=1)
 
 X_train, X_valid, y_train, y_valid =  train_test_split(X, y)
 
-# linear regression model
-model_linear = LinearRegression()
+# # linear regression model
+# model_linear = LinearRegression()
 
-model_linear.fit(X_train, y_train)
+# model_linear.fit(X_train, y_train)
 
-y_preds = model_linear.predict(X_valid)
+# y_preds = model_linear.predict(X_valid)
 
-score1 = model_linear.score(X_valid, y_valid)
-mae1 = mean_absolute_error(y_valid, y_preds)
+# score1 = model_linear.score(X_valid, y_valid)
+# mae1 = mean_absolute_error(y_valid, y_preds)
 
-# decision tree regressor model
-model_decision_tree = DecisionTreeRegressor(random_state=1)
+# # decision tree regressor model
+# model_decision_tree = DecisionTreeRegressor(random_state=1)
 
-model_decision_tree.fit(X_train, y_train)
+# model_decision_tree.fit(X_train, y_train)
 
-y_preds = model_decision_tree.predict(X_valid)
+# y_preds = model_decision_tree.predict(X_valid)
 
-score2 = model_decision_tree.score(X_valid, y_valid)
-mae2 = mean_absolute_error(y_valid, y_preds)
+# score2 = model_decision_tree.score(X_valid, y_valid)
+# mae2 = mean_absolute_error(y_valid, y_preds)
 
 # random forest model
 model_random_forest = RandomForestRegressor(random_state=1)
@@ -62,16 +62,16 @@ model_random_forest.fit(X_train, y_train)
 y_preds = model_random_forest.predict(X_valid)
 
 score3 = model_random_forest.score(X_valid, y_valid)
-mae3 = mean_absolute_error(y_valid, y_preds)
+# mae3 = mean_absolute_error(y_valid, y_preds)
 
-print("Scores")
-print(f"Linear Regression: {score1*100:.2f}%")
-print(f"Decision Tree Regressor: {score2*100:.2f}%")
-print(f"Random Forest Regressor: {score3*100:.2f}%")
+# print("Scores")
+# print(f"Linear Regression: {score1*100:.2f}%")
+# print(f"Decision Tree Regressor: {score2*100:.2f}%")
+# print(f"Random Forest Regressor: {score3*100:.2f}%")
 
-print("Mean Absolute Error")
-print(f"Linear Regression: {mae1}")
-print(f"Decision Tree Regressor: {mae2}")
-print(f"Random Forest Regressor: {mae3}")
+# print("Mean Absolute Error")
+# print(f"Linear Regression: {mae1}")
+# print(f"Decision Tree Regressor: {mae2}")
+# print(f"Random Forest Regressor: {mae3}")
 
 joblib.dump(model_random_forest, "california_housing.pkl")
