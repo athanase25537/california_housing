@@ -14,7 +14,7 @@ See requirements.txt
 
 2. go to the main directory:
 
-    cd california_housing
+        cd california_housing
 
 3. install dependencies:
 
