@@ -3,3 +3,5 @@ myenv/
 __pycache__/
 
 california_housing.pkl
+
+training.py
