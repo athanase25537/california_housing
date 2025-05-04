@@ -4,7 +4,7 @@ A RESTful API built with FastAPI that predicts California housing prices based o
 
 ## Requirements
 
-    See requirements.txt
+See requirements.txt
 
 ## Setup
 
