@@ -34,11 +34,11 @@ See requirements.txt
 
 1. Bash:
 
-    fastapi dev api.py
+        fastapi dev api.py
 
 2. See swagger for the api documentation (copy and paste to your browser):
 
-    http://127.0.0.1:8083/docs
+        http://127.0.0.1:8083/docs
 
 
 ## Endpoints
@@ -119,7 +119,11 @@ The file california_housing.pkl contains a machine learning model trained using 
 2. Project Structure
 
 .
+
 ├── api.py
+
 ├── california_housing.pkl
+
 ├── train
+
 └── README.md
