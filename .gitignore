@@ -5,3 +5,9 @@ __pycache__/
 california_housing.pkl
 
 training.py
+
+model/
+
+best_model.py
+
+model.*
