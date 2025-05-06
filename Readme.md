@@ -28,7 +28,9 @@ See requirements.txt
 
         pip install -r requirements.txt
 
-6. Make sure you've download the model "california_housing.pkl"
+6. Make sure you've download the model "california_housing.pkl" and put it on your root folder:
+
+           https://huggingface.co/athanos25537/california_housing/blob/main/california_housing.pkl
 
 ## Run the API:
 
